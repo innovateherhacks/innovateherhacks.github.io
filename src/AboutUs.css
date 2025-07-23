@@ -1,7 +1,6 @@
 .aboutus-container {
   background: #2f3f5e;
   color: #fcf5e3;
- /* padding: 40px 0 0 0; */
   padding: 110px 0 0 0;
   font-family: 'Poppins', Arial, sans-serif;
 }
@@ -45,7 +44,6 @@
   background: #b04467;
   width: 100%;
   margin-top: 40px;
-  /* Remove side padding so alignment matches header section */
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -81,12 +79,16 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .aboutus-text,
+  .aboutus-text {
+    margin-bottom: 24px;
+    display: grid !important;
+    justify-content: center !important;
+
+  }
   .aboutus-image-grid {
-    margin-right: 0;
-    min-width: 0;
-    max-width: 100%;
-    padding-bottom: 20px;
+    margin: 0 auto;
+    display: grid !important;
+    justify-content: center !important;
   }
   .aboutus-stats-bar-inner {
     padding-left: 10px;
