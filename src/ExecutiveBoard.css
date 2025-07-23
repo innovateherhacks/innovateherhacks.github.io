@@ -13,7 +13,7 @@ body {
 .exec-board-section {
   background: var(--dark-blue);
   color: #fcf5e3;
-  padding: 64px 0 80px 0;
+  padding: 64px 40px 80px 40px;
   min-height: 100vh;
   font-family: 'Poppins', Arial, sans-serif;
 }
@@ -44,8 +44,19 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 275px;
-  box-shadow: 0 8px 20px rgba(39,53,83,0.05);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.26), 0 2px 6px rgba(0,0,0,0.30);
   border: none;
+  transition: 
+    transform 0.28s cubic-bezier(.47,1.64,.41,.8),
+    box-shadow 0.24s cubic-bezier(.47,1.64,.41,.8);
+  /* Smooth movement and shadow transition */
+  will-change: transform;
+}
+
+.board-card:hover {
+  transform: rotateZ(5deg);
+  box-shadow: 0 14px 44px rgba(0,0,0,0.32), 0 4px 12px rgba(0,0,0,0.32);
+  z-index: 2;
 }
 
 .board-card.red { background: var(--red); color: #272727; }
@@ -89,7 +100,7 @@ body {
 @media (max-width: 600px) {
   .exec-board-grid {
     grid-template-columns: 1fr;
-    gap: 18px 0;
+    gap: 48px 0;
   }
 }
 
