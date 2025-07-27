@@ -14,6 +14,7 @@ export default function FaqCard({ front, back, backColor }) {
         <div className="faq-card-front">
           <p>{front}</p>
         </div>
+        
         <div className="faq-card-back" style={{ backgroundColor: backColor }}>
           <p>{back}</p>
         </div>

@@ -24,10 +24,16 @@
     box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backface-visibility: hidden;
     color: #FCF5E3;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .faq-card-front {
     background-color: #272727;
+}
+
+.faq-card-button.is-flipped .faq-card-front {
+  box-shadow: none;
 }
 
 .faq-card-back,

@@ -1,6 +1,5 @@
 .faqs-container {
     background-color: #F3ECDA;
-    padding: 10vw;
 }
 
 .faqs-container h2 {
@@ -11,15 +10,38 @@
     color: #2F3F5E;
 }
 
+.faqs-border-square {
+    box-sizing: border-box;
+    border: 12px solid #FCF5E3;
+    border-radius: 24px;
+}
+
+.faqs-top-border {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.faqs-middle-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.faqs-side-border {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3ECDA;
+}
+
 .faqs-inner-container {
     background-color: #FCF5E3;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 10vw;
-    padding-top: 5vw;
+    padding: 5vh 10vw;
+    width: 100%
 }
 
 .faqs-question-card-row {
     display: flex;
     justify-content: space-between;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
