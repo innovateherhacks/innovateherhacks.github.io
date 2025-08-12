@@ -20,7 +20,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 import AboutUs from './AboutUs';
 import ExecutiveBoard from './ExecutiveBoard';
-import Teams from './Teams';
+import Teams from './Teams'; //teams page added
 import TeamLanding from './TeamLanding';
 
 function App() {
@@ -28,10 +28,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* Redirect root to AboutUs */}
+
           <Route path="/" element={<Navigate to="/about" />} />
 
-          {/* Main pages */}
+          {/* Main pages*/}
           <Route path="/about" element={<AboutUs />} />
           <Route path="/executive-board" element={<ExecutiveBoard />} />
           <Route path="/teams" element={<Teams />} />
@@ -39,7 +39,7 @@ function App() {
           {/* Dynamic team pages */}
           <Route path="/teams/:teamId" element={<TeamLanding />} />
 
-          {/* Optional: Catch-all for undefined routes */}
+
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
       </div>

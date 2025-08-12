@@ -1,28 +1,39 @@
 import { Link } from "react-router-dom";
 import "./Teams.css";
 
+// imports from figma
+import financeImg from "./images/Finance.png";
+import communicationImg from "./images/Communication.png";
+import designImg from "./images/Design.png";
+import developmentImg from "./images/Development.png";
+import programImg from "./images/Program.png";
+import logisticsImg from "./images/Logistics.png";
+
+
 const TEAMS = [
-  { id: "finance", name: "Finance and Sponsorship", emoji: "💰", tone: "tone1" },
-  { id: "communication", name: "Communication", emoji: "💬", tone: "tone2" },
-  { id: "design", name: "Design", emoji: "🎨", tone: "tone1" },
-  { id: "development", name: "Development", emoji: "💻", tone: "tone2" },
-  { id: "program", name: "Program", emoji: "📅", tone: "tone1" },
-  { id: "logistics", name: "Logistics", emoji: "📝", tone: "tone2" },
+    { id: "finance", name: "Finance and Sponsorship", img: financeImg },
+    { id: "communication", name: "Communication", img: communicationImg },
+    { id: "design", name: "Design", img: designImg },
+    { id: "development", name: "Development", img: developmentImg },
+    { id: "program", name: "Program", img: programImg },
+    { id: "logistics", name: "Logistics", img: logisticsImg },
 ];
 
 export default function Teams() {
-  return (
-    <section className="teams-wrap">
-      <h1 className="teams-title">Teams</h1>
+    return (
+        <section className="teams-wrap full-bleed">
+            <h1 className="teams-title">Teams</h1>
 
-      <div className="teams-grid">
-        {TEAMS.map((t) => (
-          <Link key={t.id} to={`/teams/${t.id}`} className={`team-card ${t.tone}`}>
-            <span className="team-icon" aria-hidden="true">{t.emoji}</span>
-            <span className="team-name">{t.name}</span>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
+            <div className="teams-grid">
+                {TEAMS.map(t => (
+                    <Link key={t.id} to={`/teams/${t.id}`} className="team-link" aria-label={t.name}>
+                        <div className="img-tile">
+                            <img src={t.img} alt={t.name} loading="lazy" />
+                        </div>
+                    </Link>
+                ))}
+            </div>
+        </section>
+    );
 }
+
