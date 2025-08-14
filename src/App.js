@@ -4,6 +4,7 @@ import AboutUs from './AboutUs';
 import ExecutiveBoard from './ExecutiveBoard';
 import TitleCard from './TitleCard.js';
 import Navbar from './Navbar.js';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <section id="team">
         <ExecutiveBoard />
       </section>
+      <Footer />
     </div>
   );
 }
