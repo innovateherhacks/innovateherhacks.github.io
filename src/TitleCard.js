@@ -1,15 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { DateTime } from "luxon";
-import '../assets/style.css';
-import bannerImage from '../assets/Title_Card_Background.png';
-import innovateHerImage from '../assets/InnovateHer.png';
+import './TitleCard.css';
+import titleCardImage from './images/Title_Card_Background.png';
+import innovateHerImage from './images/InnovateHer.svg';
 
-const Banner = () => {
+const TitleCard = () => {
   const targetDate = DateTime.fromObject({
-    year: 2025,
-    month: 7,
-    day: 27,
-    hour: 11,
+    year: 2026,
+    month: 2,
+    day: 7,
+    hour: 8,
     minute: 0,
     second: 0
   }).setZone("America/New_York", { keepLocalTime: true }).toMillis();
@@ -32,14 +32,14 @@ const Banner = () => {
     }
 
     const totalSeconds = Math.floor(difference / 1000);
-    const totalMinutes = Math.floor(totalSeconds / 60);
-    const totalHours = Math.floor(totalMinutes / 60);
-
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = totalSeconds % 60;
-    const minutes = totalMinutes % 60;
 
     return {
-      hours: String(totalHours).padStart(2, "0"),
+      days: String(days).padStart(2, "0"),
+      hours: String(hours).padStart(2, "0"),
       minutes: String(minutes).padStart(2, "0"),
       seconds: String(seconds).padStart(2, "0"),
       expired: false
@@ -66,14 +66,14 @@ const Banner = () => {
   }, [isRunning]);
 
   return (
-    <section className="banner" style={{backgroundImage:`url(${bannerImage})`}} >
+    <section className="title-card" style={{backgroundImage:`url(${titleCardImage})`}} >
       <div className="inner-container">
         <img src={innovateHerImage} alt="InnovateHer"></img>
         {isRunning && !timeRemaining.expired ? (
           <div>
             <p className="starts-in">STARTS IN:</p>
             <p className="time">
-              {timeRemaining.hours}:{timeRemaining.minutes}:{timeRemaining.seconds}
+              {timeRemaining.days}:{timeRemaining.hours}:{timeRemaining.minutes}:{timeRemaining.seconds}
             </p>
           </div>
           ) : (
@@ -86,4 +86,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default TitleCard;

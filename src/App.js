@@ -2,16 +2,20 @@ import React from 'react';
 import './App.css';
 import AboutUs from './AboutUs';
 import ExecutiveBoard from './ExecutiveBoard';
-import Banner from './Banner.js';
+import TitleCard from './TitleCard.js';
 import Navbar from './Navbar.js';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Banner/>
-      <AboutUs />
-      <ExecutiveBoard />
+      <TitleCard/>
+      <section id="about">
+        <AboutUs />
+      </section>
+      <section id="team">
+        <ExecutiveBoard />
+      </section>
     </div>
   );
 }
