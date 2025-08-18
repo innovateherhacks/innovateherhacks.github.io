@@ -3,6 +3,7 @@ import './App.css';
 import AboutUs from './AboutUs';
 import ExecutiveBoard from './ExecutiveBoard';
 import Links from './Links';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AboutUs />
       <Links />
       <ExecutiveBoard />
+      <Footer />
     </div>
   );
 }
