@@ -8,7 +8,7 @@
     position: relative;
     flex-grow: 1;
     width: 250px;
-    height: 325px;
+    height: 350px;
     transition: transform 300ms ease-out;
     transform-style: preserve-3d;
 }
@@ -28,10 +28,15 @@
     color: #FCF5E3;
     box-sizing: border-box;
     padding: 20px;
+    font-weight: bold;
 }
 
 .faq-card-front {
     background-color: #272727;
+
+    p {
+        font-size: 22px;
+    }
 }
 
 .faq-card-button.is-flipped .faq-card-front {
@@ -43,6 +48,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
+    font-size: 16px;
 }
 
 .faq-card-back,
