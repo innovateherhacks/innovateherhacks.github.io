@@ -1,11 +1,11 @@
 import React from 'react';
 import './Tracks.css';
 
-import img1 from './images/Tracks/Purdue.png';
-import img2 from './images/Tracks/Health.png';
-import img3 from './images/Tracks/Geoconnections.png';
-import img4 from './images/Tracks/Sustainability.png';
-import img5 from './images/Tracks/FinancialLiteracy.png';
+import img1 from './images/Tracks/Purdue (1).png';
+import img2 from './images/Tracks/Health (1).png';
+import img3 from './images/Tracks/Geoconnections (1).png';
+import img4 from './images/Tracks/Sustainability (1).png';
+import img5 from './images/Tracks/FinancialLiteracy (1).png';
 
 const tracks = [
   { name: 'Purdue', image: img1, className: 'track-card gold' },
