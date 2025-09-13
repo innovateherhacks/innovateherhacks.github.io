@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
-import AboutUs from './AboutUs';
-import ExecutiveBoard from './ExecutiveBoard';
-import TitleCard from './TitleCard.js';
+import React from 'react'
+import './App.css'
+import AboutUs from './AboutUs'
+import ExecutiveBoard from './ExecutiveBoard'
+import Links from './Links'
+import FAQs from './FAQs'
+import Footer from './Footer'
+import Banner from './Banner.js';
 import Navbar from './Navbar.js';
-import Links from './Links';
-import Footer from './Footer';
 
 function App() {
   return (
@@ -13,15 +14,16 @@ function App() {
       <Navbar/>
       <TitleCard/>
       <section id="about">
-        <AboutUs />
+        <AboutUs/>
       </section>
-      <Links />
+      <Links/>
       <section id="team">
-        <ExecutiveBoard />
+        <ExecutiveBoard/>
+      <FAQs/>
       </section>
-      <Footer />
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
