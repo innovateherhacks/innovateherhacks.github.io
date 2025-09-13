@@ -97,17 +97,17 @@ const AboutUs = () => {
         <div className="aboutus-stats-bar-inner">
           <div>
             <span>
-              <strong>36</strong> <span className="aboutus-stats-label">hours</span>
+              <strong className="stats-number">36</strong> <span className="aboutus-stats-label">HOURS</span>
             </span>
           </div>
           <div>
             <span>
-              <strong>30+</strong> <span className="aboutus-stats-label">projects</span>
+              <strong className="stats-number">30+</strong> <span className="aboutus-stats-label">PROJECTS</span>
             </span>
           </div>
           <div>
             <span>
-              <strong>260+</strong> <span className="aboutus-stats-label">participants</span>
+              <strong className="stats-number">260+</strong> <span className="aboutus-stats-label">PARTICIPANTS</span>
             </span>
           </div>
         </div>
