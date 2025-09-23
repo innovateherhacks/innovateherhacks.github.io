@@ -25,7 +25,7 @@
 .tracks-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px 24px;
+  gap: 16px 12px;
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
@@ -50,15 +50,9 @@
   z-index: 2;
 }
 
-/* Keep your color themes if you want background color behind image */
-.track-card.red { background: transparent; }
-.track-card.pink { background: transparent; }
-.track-card.gold { background: transparent; }
-.track-card.cream { background: transparent; }
-
 .track-img {
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   object-fit: contain;
   background: transparent;
   border-radius: 0;
@@ -69,136 +63,19 @@
   display: none;
 }
 
-.track-card:hover .track-label {
-  color: var(--gold);
-  transform: scale(1.15) translateY(-6px);
-  animation: bounce 0.5s;
-}
 
-@keyframes bounce {
-  0%   { transform: scale(1.15) translateY(-6px);}
-  30%  { transform: scale(1.25) translateY(-18px);}
-  60%  { transform: scale(1.1)  translateY(-8px);}
-  100% { transform: scale(1.15) translateY(-6px);}
-}
-
-@media (max-width: 900px) {
-  .tracks-section {
-    padding: 32px 8px 40px 8px;
-  }
-  .tracks-title {
-    font-size: 2.2rem;
-    margin-bottom: 24px;
-  }
-  .tracks-grid {
-    grid-template-columns: 1fr;
-    gap: 32px 0;
-    max-width: 100%;
-    justify-items: center;
-    margin: 0 auto;
-  }
-  .track-card {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    align-items: center;
-    padding: 0;
-    box-sizing: border-box;
-    transform: none !important;
-    justify-self: center;
-  }
-  .track-img {
-    width: 90vw;
-    max-width: 350px;
-    height: auto;
-    margin-bottom: 16px;
-    transform: none !important;
-  }
-  /* Remove custom transforms and sizing for mobile */
-  .tracks-grid > .track-card:nth-child(4),
-  .tracks-grid > .track-card:nth-child(5) {
-    transform: none !important;
-    justify-self: center;
-  }
-  .tracks-grid > .track-card:nth-child(4) .track-img,
-  .tracks-grid > .track-card:nth-child(5) .track-img {
-    transform: none !important;
-    width: 90vw;
-    max-width: 350px;
-  }
-  /* Remove custom sizing for the second and fifth image */
-  .tracks-grid > .track-card:nth-child(2) .track-img,
-  .tracks-grid > .track-card:nth-child(5) .track-img {
-    width: 90vw;
-    max-width: 350px;
-  }
-}
-
-/* Mobile: 2-column grid with large, proportional images and centered last item */
-@media (max-width: 600px) {
-  .tracks-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 12px;
-    max-width: 100%;
-    justify-items: center;
-    margin: 0 auto;
-    padding: 0 12px;
-  }
-
-  .track-card {
-    width: 100%;
-    padding: 8px 6px;
-    box-sizing: border-box;
-    align-items: center;
-    transform: none !important;
-    justify-self: center;
-  }
-
-  /* Make images scale to occupy most of each column while keeping aspect ratio */
-  .track-img {
-    width: calc(50vw - 28px); /* roughly half the viewport minus padding/gap */
-    max-width: 260px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 8px;
-    transform: none !important;
-  }
-
-  /* First four items will naturally fill the 2x2 area; center the 5th below */
-  .tracks-grid > .track-card:nth-child(5) {
-    grid-column: 1 / -1; /* span both columns */
-    justify-self: center;
-  }
-
-  /* Ensure any per-item transforms or offsets are cleared on mobile */
-  .tracks-grid > .track-card:nth-child(4),
-  .tracks-grid > .track-card:nth-child(5) {
-    transform: none !important;
-  }
-}
-
-.tracks-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px 24px;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-}
 
 .tracks-grid > .track-card:nth-child(4),
 .tracks-grid > .track-card:nth-child(5) {
   justify-self: start;
-  transform: translateX(150px); /* Keep your shift */
+  transform: translateX(80px); /* reduced shift to match smaller images */
   transition: transform 0.28s cubic-bezier(.47,1.64,.41,.8);
 }
 
 .tracks-grid > .track-card:nth-child(4):hover,
 .tracks-grid > .track-card:nth-child(5):hover {
   /* Combine translate and scale! */
-  transform: translateX(150px) scale(1.05);
+  transform: translateX(80px) scale(1.05);
   z-index: 2;
 }
 
@@ -207,110 +84,22 @@
   grid-column: 1 / 2;
 }
 
-/* Remove custom sizing for the second image */
-.tracks-grid > .track-card:nth-child(2) .track-img {
-  width: 400px;
-  max-width: 400px;
-}
-
 .tracks-grid > .track-card:nth-child(5) .track-img {
-  width: 500px;
-  max-width: 500px;
+  width: 350px;
+  max-width: 350px;
 }
 
 .tracks-grid > .track-card:nth-child(4) .track-img,
 .tracks-grid > .track-card:nth-child(5) .track-img {
-  transform: translate(120px, 40px); /* 120px right, 40px down; adjust as needed */
+  transform: translate(130px, 20px); /* smaller translate for reduced images */
 }
 
-/* Mobile: improved 2-column layout (2x2 + centered last item), larger gutters and clearer spacing */
-@media (max-width: 600px) {
-  .tracks-section {
-    padding: 36px 16px 48px 16px;
-  }
 
-  .tracks-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
 
-  .tracks-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 22px 16px !important;
-    max-width: 100% !important;
-    justify-items: center !important;
-    margin: 0 auto !important;
-    padding: 0 16px !important;
-  }
-
-  .track-card {
-    width: 100% !important;
-    max-width: 320px !important;
-    padding: 10px 8px !important;
-    box-sizing: border-box !important;
-    align-items: center !important;
-    transform: none !important;
-    justify-self: center !important;
-  }
-
-  /* Scale images to take most of each column while preserving aspect ratio */
-  .track-img {
-    width: calc((100vw - 56px) / 2) !important; /* viewport half minus paddings/gaps */
-    max-width: 260px !important;
-    height: auto !important;
-    object-fit: contain !important;
-    margin-bottom: 12px !important;
-    transform: none !important;
-  }
-
-  /* Ensure first four items form a 2x2; center the 5th below by spanning both columns */
-  .tracks-grid > .track-card:nth-child(5) {
-    grid-column: 1 / -1 !important;
-    justify-self: center !important;
-    margin-top: 6px !important;
-  }
-
-  /* Clear any leftover per-item offsets/transforms on mobile */
-  .tracks-grid > .track-card:nth-child(2) .track-img,
-  .tracks-grid > .track-card:nth-child(4) .track-img,
-  .tracks-grid > .track-card:nth-child(5) .track-img {
-    width: calc((100vw - 56px) / 2) !important;
-    max-width: 260px !important;
-    transform: none !important;
-  }
-
-  .tracks-grid > .track-card:nth-child(4),
-  .tracks-grid > .track-card:nth-child(5) {
-    transform: none !important;
-  }
-}
-
-/* Mobile: slightly smaller images override to tighten spacing */
-@media (max-width: 600px) {
-  .tracks-grid {
-    padding: 0 16px !important;
-  }
-
-  .track-card {
-    padding: 8px 6px !important;
-  }
-
-  /* Make images a bit smaller on phones (keeps 2-column layout) */
-  .track-img {
-    width: calc((100vw - 56px) / 2) !important; /* half viewport minus gutters */
-    max-width: 180px !important;
-    height: auto !important;
-    margin-bottom: 10px !important;
-    transform: none !important;
-  }
-
-  /* Ensure per-item images also use the same smaller sizing */
-  .tracks-grid > .track-card:nth-child(2) .track-img,
-  .tracks-grid > .track-card:nth-child(4) .track-img,
-  .tracks-grid > .track-card:nth-child(5) .track-img {
-    width: calc((100vw - 56px) / 2) !important;
-    max-width: 180px !important;
-    transform: none !important;
-  }
+/* animation */
+@keyframes bounce {
+  0%   { transform: scale(1.15) translateY(-6px);}
+  30%  { transform: scale(1.25) translateY(-18px);}
+  60%  { transform: scale(1.1)  translateY(-8px);}
+  100% { transform: scale(1.15) translateY(-6px);}
 }
