@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import AboutUs from './AboutUs'
+import Tracks from './Tracks';
 import ExecutiveBoard from './ExecutiveBoard'
 import Links from './Links'
 import FAQs from './FAQs'
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <AboutUs/>
+      <Tracks />
       <Links/>
       <ExecutiveBoard/>
       <FAQs/>
