@@ -1,0 +1,174 @@
+/* src/components/TracksPage.css */
+
+.tracks-page {
+  background: #2F3F5E;
+  min-height: 100vh;
+  color: #f7f4e9;
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracks-title {
+  margin-top: 100px;
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 48px 56px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+  align-items: center;
+  min-height: 440px;
+  padding-right: 50px;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+.track-item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 28px 2px 16px 2px;
+  transition: transform 0.18s cubic-bezier(.34,1.56,.64,1), box-shadow 0.18s cubic-bezier(.34,1.56,.64,1);
+}
+
+.track-item:hover {
+  transform: scale(1.15) translateY(-6px); /* pop and lift slightly */
+  z-index: 2;
+}
+
+.tracks-grid .track-item:nth-child(1) { grid-row: 1; grid-column: 1; }
+.tracks-grid .track-item:nth-child(2) { grid-row: 1; grid-column: 3; }
+.tracks-grid .track-item:nth-child(3) { grid-row: 1; grid-column: 5; }
+.tracks-grid .track-item:nth-child(4) { grid-row: 2; grid-column: 2; }
+.tracks-grid .track-item:nth-child(5) { grid-row: 2; grid-column: 4; }
+
+.tracks-grid .track-item:nth-child(1) .track-label {
+  margin-right: 27px;
+}
+.tracks-grid .track-item:nth-child(4) .track-label {
+  margin-top: 27px;
+  margin-right: 10px;
+}
+.tracks-grid .track-item:nth-child(5) .track-label {
+  margin-left: 18px;
+}
+
+.track-icon {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.track-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #f7f4e9;
+  text-align: center;
+  margin-top: 7px;
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 44px 36px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 18px;
+    min-height: 500px;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .tracks-grid .track-item:nth-child(1) { grid-row: 1; grid-column: 1; }
+  .tracks-grid .track-item:nth-child(2) { grid-row: 1; grid-column: 3; }
+  .tracks-grid .track-item:nth-child(3) { grid-row: 2; grid-column: 2; }
+  .tracks-grid .track-item:nth-child(4) { grid-row: 3; grid-column: 1; }
+  .tracks-grid .track-item:nth-child(5) { grid-row: 3; grid-column: 3; }
+}
+
+@media (max-width: 900px) {
+  .tracks-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    gap: 0;
+  }
+  .track-item {
+    width: 90%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tracks-grid .track-item:nth-child(4) .track-label {
+    margin-top: 20px !important; /* Shift label left more for 900px and below */
+  }
+  .tracks-grid .track-item:nth-child(5) .track-label {
+    margin-right: 15px; /* Shift label left more for 900px and below */
+  }
+  .tracks-grid .track-item {
+    margin-bottom: 44px;
+  }
+  .tracks-grid .track-item:last-child {
+    margin-bottom: 0;
+  }
+  .tracks-grid .track-item:nth-child(3) {
+    margin-top: 15px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 25px 0;
+    width: min(98vw, 420px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .track-item {
+    width: 100%;
+    max-width: unset;
+    padding: 10px 8px 10px 8px;
+  }
+  .track-icon {
+    margin-bottom: 6px;
+  }
+  .tracks-title {
+    margin-top: 60px;
+  }
+  .track-label {
+    margin-top: 3px;
+  }
+  .tracks-grid .track-item:nth-child(5) .track-label {
+    margin-right: 15px; /* Shift label left more for 900px and below */
+  }
+}
+
+
