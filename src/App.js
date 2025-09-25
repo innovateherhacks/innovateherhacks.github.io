@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import AboutUs from './AboutUs'
-import Tracks from './Tracks';
+import TracksPage from './TracksPage';
 import ExecutiveBoard from './ExecutiveBoard'
 import Links from './Links'
 import FAQs from './FAQs'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <AboutUs/>
-      <Tracks />
+      <TracksPage />
       <Links/>
       <ExecutiveBoard/>
       <FAQs/>
