@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import AboutUs from './AboutUs'
-/*import Tracks from './Tracks'; */
 import TracksPage from './TracksPage';
 import ExecutiveBoard from './ExecutiveBoard'
 import Links from './Links'
