@@ -3,6 +3,7 @@ import './App.css';
 import AboutUs from './AboutUs';
 import ExecutiveBoard from './ExecutiveBoard';
 import Links from './Links';
+import Sponsors from './Sponsors';
 import Footer from './Footer';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <AboutUs />
       <Links />
       <ExecutiveBoard />
+      <Sponsors />
       <Footer />
     </div>
   );
