@@ -10,17 +10,29 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-items">
-          {/* Info / Code of Conduct */}
+          {/* Instagram */}
           <div className="footer-item">
             <span className="footer-icon footer-round">
-              <InfoIcon />
+              <InstagramIcon />
             </span>
             <a
-              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              href="https://www.instagram.com/innovateherhacks?utm_source=ig_web_button_share_sheet&igsh=Y2E4cGR5czdnbWxr"
               className="footer-link"
               target="_blank" rel="noopener noreferrer"
             >
-              MLH Code of Conduct
+              @innovateherhacks
+            </a>
+          </div>
+          {/* Purdue email */}
+          <div className="footer-item">
+            <span className="footer-icon footer-round">
+              <EmailIcon />
+            </span>
+            <a
+              href="mailto:inov8her@purdue.edu"
+              className="footer-link"
+            >
+              inov8her@purdue.edu
             </a>
           </div>
           {/* Email */}
@@ -36,17 +48,17 @@ export default function Footer() {
             </a>
 
           </div>
-          {/* Instagram */}
+          {/* Info / Code of Conduct */}
           <div className="footer-item">
             <span className="footer-icon footer-round">
-              <InstagramIcon />
+              <InfoIcon />
             </span>
             <a
-              href="https://www.instagram.com/innovateherhacks?utm_source=ig_web_button_share_sheet&igsh=Y2E4cGR5czdnbWxr"
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               className="footer-link"
               target="_blank" rel="noopener noreferrer"
             >
-              @innovateherhacks
+              MLH Code of Conduct
             </a>
           </div>
         </div>
