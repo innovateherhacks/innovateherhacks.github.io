@@ -8,7 +8,7 @@ function Links() {
     if (role === 'Participant') {
       message = 'Sign-ups for Participants open on November 25th! Please check back then.';
     } else if (role === 'Mentor') {
-      message = 'Sign-ups for Mentors open on December 1st! Please check back then.';
+      message = 'Sign-ups for Mentors open on November 25th! Please check back then.';
     } else if (role === 'Volunteer') {
       message = 'Sign-ups for Volunteers open on December 1st! Please check back then.';
     }
