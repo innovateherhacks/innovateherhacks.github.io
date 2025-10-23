@@ -1,21 +1,23 @@
-import React from 'react'
-import './App.css'
-import AboutUs from './AboutUs'
+import React from 'react';
+import './App.css';
+import AboutUs from './AboutUs';
 import TracksPage from './TracksPage';
-import ExecutiveBoard from './ExecutiveBoard'
-import Links from './Links'
-import FAQs from './FAQs'
-import Footer from './Footer'
+import ExecutiveBoard from './ExecutiveBoard';
+import Links from './Links';
+import FAQs from './FAQs';
+import Sponsors from './Sponsors';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <AboutUs/>
+      <AboutUs />
       <TracksPage />
-      <Links/>
-      <ExecutiveBoard/>
+      <Links />
+      <ExecutiveBoard />
       <FAQs/>
-      <Footer/>
+      <Sponsors />
+      <Footer />
     </div>
   )
 }
