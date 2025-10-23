@@ -10,7 +10,9 @@ import mlh from './sponsor logos/mlh-logo-black.png';
 import soga from './sponsor logos/SOGA-Logo.png';
 import groq from './sponsor logos/Groq_logo.svg.png';
 import purdue_cs from './sponsor logos/Purdue CS.png';
-import lockheed from './sponsor logos/LMT_BIG.png';
+import lockheed from './sponsor logos/lockheed_martin_logo.png';
+import oracle from './sponsor logos/oracle.png';
+import badger from './sponsor logos/badger.jpg';
 
 function Sponsors() {
   const sponsors = [
@@ -23,7 +25,9 @@ function Sponsors() {
     { src: soga, alt: 'Soga' },
     { src: groq, alt: 'Groq' },
     { src: purdue_cs, alt: 'Purdue CS' },
-    { src: lockheed, alt: 'Lockheed Martin' }
+    { src: lockheed, alt: 'Lockheed Martin' },
+    { src: oracle, alt: 'Oracle' },
+    { src: badger, alt: 'Badger LLC' }
   ];
 
   return (
