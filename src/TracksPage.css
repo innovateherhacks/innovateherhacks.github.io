@@ -56,17 +56,6 @@
 .tracks-grid .track-item:nth-child(4) { grid-row: 2; grid-column: 2; }
 .tracks-grid .track-item:nth-child(5) { grid-row: 2; grid-column: 4; }
 
-.tracks-grid .track-item:nth-child(1) .track-label {
-  margin-right: 27px;
-}
-.tracks-grid .track-item:nth-child(4) .track-label {
-  margin-top: 27px;
-  margin-right: 10px;
-}
-.tracks-grid .track-item:nth-child(5) .track-label {
-  margin-left: 18px;
-}
-
 .track-icon {
   width: 200px;
   height: 200px;
@@ -74,15 +63,6 @@
   max-height: 100%;
   object-fit: contain;
   margin-bottom: 16px;
-}
-
-.track-label {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  color: #f7f4e9;
-  text-align: center;
-  margin-top: 7px;
 }
 
 @media (min-width: 900px) and (max-width: 1300px) {
@@ -125,20 +105,11 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .tracks-grid .track-item:nth-child(4) .track-label {
-    margin-top: 20px !important; /* Shift label left more for 900px and below */
-  }
-  .tracks-grid .track-item:nth-child(5) .track-label {
-    margin-right: 15px; /* Shift label left more for 900px and below */
-  }
   .tracks-grid .track-item {
-    margin-bottom: 44px;
+    margin-bottom: 20px;
   }
   .tracks-grid .track-item:last-child {
     margin-bottom: 0;
-  }
-  .tracks-grid .track-item:nth-child(3) {
-    margin-top: 15px;
   }
 }
 
@@ -149,8 +120,7 @@
     width: min(98vw, 420px);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 20px;
   }
   .track-item {
     width: 100%;
@@ -162,11 +132,5 @@
   }
   .tracks-title {
     margin-top: 60px;
-  }
-  .track-label {
-    margin-top: 3px;
-  }
-  .tracks-grid .track-item:nth-child(5) .track-label {
-    margin-right: 15px; /* Shift label left more for 900px and below */
   }
 }
