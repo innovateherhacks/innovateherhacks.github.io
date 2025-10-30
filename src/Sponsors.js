@@ -13,6 +13,7 @@ import purdue_cs from './sponsor logos/Purdue CS.png';
 import lockheed from './sponsor logos/lockheed_martin_logo.png';
 import oracle from './sponsor logos/oracle.png';
 import badger from './sponsor logos/badger.jpg';
+import stickers from './sponsor logos/stickers.png';
 
 function Sponsors() {
   const sponsors = [
@@ -27,7 +28,8 @@ function Sponsors() {
     { src: purdue_cs, alt: 'Purdue CS' },
     { src: lockheed, alt: 'Lockheed Martin' },
     { src: oracle, alt: 'Oracle' },
-    { src: badger, alt: 'Badger LLC' }
+    { src: badger, alt: 'Badger LLC' },
+    { src: stickers, alt: 'Stickers' }
   ];
 
   return (
