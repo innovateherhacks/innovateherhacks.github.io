@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono');
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  background-color: #F3ECDA;
+  padding: 24px;
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'JetBrains Mono';
+  font-size: clamp(0.5em, 2vw, 1.5em);
+}
+
+.nav-items li a:hover {
+  color: #007BFF;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    top: 10px;
+    padding: 5px 24px;
+  }
+}
