@@ -7,10 +7,10 @@ const Navbar = () => {
       <ul className="nav-items">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#">TRACKS</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#faqs">FAQ</a></li>
         <li><a href="#team">TEAM</a></li>
         <li><a href="#">SPONSORS</a></li>
-        <li><a href="#">APPLICATIONS</a></li>
+        <li><a href="#applications">APPLICATIONS</a></li>
       </ul>
     </div>
   );

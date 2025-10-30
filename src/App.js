@@ -5,7 +5,7 @@ import ExecutiveBoard from './ExecutiveBoard'
 import Links from './Links'
 import FAQs from './FAQs'
 import Footer from './Footer'
-import Banner from './Banner.js';
+import TitleCard from './TitleCard.js';
 import Navbar from './Navbar.js';
 
 function App() {
@@ -16,10 +16,14 @@ function App() {
       <section id="about">
         <AboutUs/>
       </section>
-      <Links/>
+      <section id="applications">
+        <Links/>
+      </section>
       <section id="team">
         <ExecutiveBoard/>
-      <FAQs/>
+      </section>
+      <section id="faqs">
+        <FAQs/>
       </section>
       <Footer/>
     </div>
