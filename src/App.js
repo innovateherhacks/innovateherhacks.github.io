@@ -10,7 +10,7 @@ import TeamLanding from './TeamLanding';
 import Sponsors from './Sponsors';
 import Footer from './Footer';
 
-import Banner from './Banner.js';
+import TitleCard from './TitleCard.js';
 import Navbar from './Navbar.js';
 
 function App() {
@@ -21,24 +21,22 @@ function App() {
       <section id="about">
         <AboutUs/>
       </section>
-      <section id="applications">
-        <Links/>
+      <section id="tracks">
+        <TracksPage />
       </section>
-      <section id="team">
-        <ExecutiveBoard/>
+      <ExecutiveBoard />  
+      <section id="applications">
+        <Links />
       </section>
       <section id="faqs">
         <FAQs/>
       </section>
-      <Footer/>
-      <Banner/>
-      <AboutUs />
-      <TracksPage />
-      <ExecutiveBoard />  
-      <Links />
-      <FAQs />
-      <Teams />
-      <Sponsors />
+      <section id="team">
+        <Teams />
+      </section>
+      <section id="sponsors">
+        <Sponsors />
+      </section>
       <Footer />
     </div>
   )
