@@ -76,19 +76,17 @@
   box-shadow: 0 16px 32px rgba(16,24,40,0.3);
 }
 
-/* Team landing section */
 .team-landing {
   margin-top: 2rem;
   text-align: center;
   animation: fadeIn 0.4s ease-in;
 }
 
-/* Wrap image and button together and center them */
 .team-landing-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; /* space between image and button */
+  gap: 1rem;
 }
 
 .team-image {
