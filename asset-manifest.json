@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4512646f.css",
-    "main.js": "/static/js/main.b626b82e.js",
+    "main.js": "/static/js/main.f62e650c.js",
     "static/js/453.ca6008ce.chunk.js": "/static/js/453.ca6008ce.chunk.js",
     "static/media/Elina.jpg": "/static/media/Elina.e6f07199f8f995d05c26.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.58a09c11ec094f08ce9c.jpg",
@@ -21,6 +21,7 @@
     "static/media/Title_Card_Background.png": "/static/media/Title_Card_Background.67dd0fa846210f9bcda7.png",
     "static/media/finance-team.JPG": "/static/media/finance-team.cc329d83bb21af65b90c.JPG",
     "static/media/communication-team.JPG": "/static/media/communication-team.129f8e8ea27481da2825.JPG",
+    "static/media/program-logistics-team.JPG": "/static/media/program-logistics-team.5f92e55c7f12a1525d8a.JPG",
     "static/media/design-team.JPG": "/static/media/design-team.f2de44bcb344f0481f1f.JPG",
     "static/media/development-team.JPG": "/static/media/development-team.5b3ea5470579594d334b.JPG",
     "static/media/stickers.png": "/static/media/stickers.0459e32f12002a1a0933.png",
@@ -42,15 +43,15 @@
     "static/media/faqsDice.png": "/static/media/faqsDice.cc0da027b55319c91e23.png",
     "static/media/floppyDisk.png": "/static/media/floppyDisk.0656a20f20b1e27b9a7f.png",
     "index.html": "/index.html",
-    "static/media/instagram.svg": "/static/media/instagram.342a36cbcbae0aa8340c8c574d18359a.svg",
-    "static/media/info.svg": "/static/media/info.b1d81268a9a0bdfc214e333ac2fb6dbd.svg",
-    "static/media/mail.svg": "/static/media/mail.7d482b09a94619a98aade397c630c1b4.svg",
+    "static/media/instagram.svg": "/static/media/instagram.db08150dd03da0ca6ebad3881ed75e6c.svg",
+    "static/media/info.svg": "/static/media/info.04e0f2b4112fffade22adfcc61b60afc.svg",
+    "static/media/mail.svg": "/static/media/mail.ebf8cb9f512ee5dddcdd58affb427ef1.svg",
     "main.4512646f.css.map": "/static/css/main.4512646f.css.map",
-    "main.b626b82e.js.map": "/static/js/main.b626b82e.js.map",
+    "main.f62e650c.js.map": "/static/js/main.f62e650c.js.map",
     "453.ca6008ce.chunk.js.map": "/static/js/453.ca6008ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4512646f.css",
-    "static/js/main.b626b82e.js"
+    "static/js/main.f62e650c.js"
   ]
 }
