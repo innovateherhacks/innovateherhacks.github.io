@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4512646f.css",
-    "main.js": "/static/js/main.cbd02de5.js",
+    "main.css": "/static/css/main.63122fb9.css",
+    "main.js": "/static/js/main.714a116d.js",
     "static/js/453.ca6008ce.chunk.js": "/static/js/453.ca6008ce.chunk.js",
     "static/media/Elina.jpg": "/static/media/Elina.e6f07199f8f995d05c26.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.58a09c11ec094f08ce9c.jpg",
@@ -25,16 +25,14 @@
     "static/media/design-team.JPG": "/static/media/design-team.f2de44bcb344f0481f1f.JPG",
     "static/media/development-team.JPG": "/static/media/development-team.5b3ea5470579594d334b.JPG",
     "static/media/stickers.png": "/static/media/stickers.0459e32f12002a1a0933.png",
-    "static/media/Culture Connect.png": "/static/media/Culture Connect.e28d720e8620b018ecfa.png",
     "static/media/Mind Matters.png": "/static/media/Mind Matters.d6cf88eea3fb82b259fa.png",
     "static/media/WolframCorporateLogo.svg.png": "/static/media/WolframCorporateLogo.svg.9e82c43f3c58393271d9.png",
-    "static/media/[website] Finance Forward.png": "/static/media/[website] Finance Forward.98a30a97eec9c412e7f5.png",
     "static/media/WHPC_LOGO.png": "/static/media/WHPC_LOGO.887faeb2901d09894bdc.png",
-    "static/media/Art + Tech Fusion.png": "/static/media/Art + Tech Fusion.09c0e6b608a71a95703c.png",
     "static/media/LHX_BIG.png": "/static/media/LHX_BIG.c0a84291a047a73fb0aa.png",
-    "static/media/Purdue (1).png": "/static/media/Purdue (1).750815171fe5fd10f5c7.png",
     "static/media/InnovateHer.svg": "/static/media/InnovateHer.c760593b5dd50d483d876475de0d254e.svg",
+    "static/media/ArtCulture.png": "/static/media/ArtCulture.0e58e340b67ac6487f4f.png",
     "static/media/lockheed_martin_logo.png": "/static/media/lockheed_martin_logo.fa4e170e4608a8ae56a8.png",
+    "static/media/FinanceForward.png": "/static/media/FinanceForward.2ccd955b2dc3f7e4fde8.png",
     "static/media/CAT_BIG.png": "/static/media/CAT_BIG.1b34ded75b00a1deaeb0.png",
     "static/media/Groq_logo.svg.png": "/static/media/Groq_logo.svg.f5293d73308ae5d732f4.png",
     "static/media/SOGA-Logo.png": "/static/media/SOGA-Logo.a755f54aa5f481101058.png",
@@ -46,12 +44,12 @@
     "static/media/instagram.svg": "/static/media/instagram.342a36cbcbae0aa8340c8c574d18359a.svg",
     "static/media/info.svg": "/static/media/info.b1d81268a9a0bdfc214e333ac2fb6dbd.svg",
     "static/media/mail.svg": "/static/media/mail.7d482b09a94619a98aade397c630c1b4.svg",
-    "main.4512646f.css.map": "/static/css/main.4512646f.css.map",
-    "main.cbd02de5.js.map": "/static/js/main.cbd02de5.js.map",
+    "main.63122fb9.css.map": "/static/css/main.63122fb9.css.map",
+    "main.714a116d.js.map": "/static/js/main.714a116d.js.map",
     "453.ca6008ce.chunk.js.map": "/static/js/453.ca6008ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4512646f.css",
-    "static/js/main.cbd02de5.js"
+    "static/css/main.63122fb9.css",
+    "static/js/main.714a116d.js"
   ]
 }
