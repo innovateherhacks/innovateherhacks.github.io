@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdfaa6d8.css",
-    "main.js": "/static/js/main.b6959e48.js",
+    "main.js": "/static/js/main.89b6faf5.js",
     "static/js/453.ca6008ce.chunk.js": "/static/js/453.ca6008ce.chunk.js",
     "static/media/Elina.jpg": "/static/media/Elina.e6f07199f8f995d05c26.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.58a09c11ec094f08ce9c.jpg",
@@ -26,6 +26,7 @@
     "static/media/development-team.JPG": "/static/media/development-team.5b3ea5470579594d334b.JPG",
     "static/media/stickers.png": "/static/media/stickers.0459e32f12002a1a0933.png",
     "static/media/Mind Matters.png": "/static/media/Mind Matters.d6cf88eea3fb82b259fa.png",
+    "static/media/oracle.png": "/static/media/oracle.44994f010daa3ad6e0a4.png",
     "static/media/WolframCorporateLogo.svg.png": "/static/media/WolframCorporateLogo.svg.9e82c43f3c58393271d9.png",
     "static/media/capitalone.png": "/static/media/capitalone.cd3336b8bf883aaa96fb.png",
     "static/media/WHPC_LOGO.png": "/static/media/WHPC_LOGO.887faeb2901d09894bdc.png",
@@ -36,8 +37,6 @@
     "static/media/FinanceForward.png": "/static/media/FinanceForward.2ccd955b2dc3f7e4fde8.png",
     "static/media/CAT_BIG.png": "/static/media/CAT_BIG.1b34ded75b00a1deaeb0.png",
     "static/media/Groq_logo.svg.png": "/static/media/Groq_logo.svg.f5293d73308ae5d732f4.png",
-    "static/media/SOGA-Logo.png": "/static/media/SOGA-Logo.a755f54aa5f481101058.png",
-    "static/media/oracle.png": "/static/media/oracle.7414e874accf57dfbe64.png",
     "static/media/mlh-logo-black.png": "/static/media/mlh-logo-black.158ba2898961cdfdfc3f.png",
     "static/media/faqsDice.png": "/static/media/faqsDice.cc0da027b55319c91e23.png",
     "static/media/floppyDisk.png": "/static/media/floppyDisk.0656a20f20b1e27b9a7f.png",
@@ -46,11 +45,11 @@
     "static/media/info.svg": "/static/media/info.b1d81268a9a0bdfc214e333ac2fb6dbd.svg",
     "static/media/mail.svg": "/static/media/mail.7d482b09a94619a98aade397c630c1b4.svg",
     "main.cdfaa6d8.css.map": "/static/css/main.cdfaa6d8.css.map",
-    "main.b6959e48.js.map": "/static/js/main.b6959e48.js.map",
+    "main.89b6faf5.js.map": "/static/js/main.89b6faf5.js.map",
     "453.ca6008ce.chunk.js.map": "/static/js/453.ca6008ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdfaa6d8.css",
-    "static/js/main.b6959e48.js"
+    "static/js/main.89b6faf5.js"
   ]
 }
