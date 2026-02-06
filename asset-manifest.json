@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c08b283.css",
-    "main.js": "/static/js/main.8911782e.js",
+    "main.css": "/static/css/main.cdfaa6d8.css",
+    "main.js": "/static/js/main.89b6faf5.js",
     "static/js/453.ca6008ce.chunk.js": "/static/js/453.ca6008ce.chunk.js",
     "static/media/Elina.jpg": "/static/media/Elina.e6f07199f8f995d05c26.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.58a09c11ec094f08ce9c.jpg",
@@ -25,7 +25,6 @@
     "static/media/design-team.JPG": "/static/media/design-team.f2de44bcb344f0481f1f.JPG",
     "static/media/development-team.JPG": "/static/media/development-team.5b3ea5470579594d334b.JPG",
     "static/media/stickers.png": "/static/media/stickers.0459e32f12002a1a0933.png",
-    "static/media/W_HT_Women_Logo.png": "/static/media/W_HT_Women_Logo.e65aead9158d7084e61f.png",
     "static/media/Mind Matters.png": "/static/media/Mind Matters.d6cf88eea3fb82b259fa.png",
     "static/media/oracle.png": "/static/media/oracle.44994f010daa3ad6e0a4.png",
     "static/media/WolframCorporateLogo.svg.png": "/static/media/WolframCorporateLogo.svg.9e82c43f3c58393271d9.png",
@@ -42,15 +41,15 @@
     "static/media/faqsDice.png": "/static/media/faqsDice.cc0da027b55319c91e23.png",
     "static/media/floppyDisk.png": "/static/media/floppyDisk.0656a20f20b1e27b9a7f.png",
     "index.html": "/index.html",
-    "static/media/instagram.svg": "/static/media/instagram.db08150dd03da0ca6ebad3881ed75e6c.svg",
-    "static/media/info.svg": "/static/media/info.04e0f2b4112fffade22adfcc61b60afc.svg",
-    "static/media/mail.svg": "/static/media/mail.ebf8cb9f512ee5dddcdd58affb427ef1.svg",
-    "main.8c08b283.css.map": "/static/css/main.8c08b283.css.map",
-    "main.8911782e.js.map": "/static/js/main.8911782e.js.map",
+    "static/media/instagram.svg": "/static/media/instagram.342a36cbcbae0aa8340c8c574d18359a.svg",
+    "static/media/info.svg": "/static/media/info.b1d81268a9a0bdfc214e333ac2fb6dbd.svg",
+    "static/media/mail.svg": "/static/media/mail.7d482b09a94619a98aade397c630c1b4.svg",
+    "main.cdfaa6d8.css.map": "/static/css/main.cdfaa6d8.css.map",
+    "main.89b6faf5.js.map": "/static/js/main.89b6faf5.js.map",
     "453.ca6008ce.chunk.js.map": "/static/js/453.ca6008ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c08b283.css",
-    "static/js/main.8911782e.js"
+    "static/css/main.cdfaa6d8.css",
+    "static/js/main.89b6faf5.js"
   ]
 }
