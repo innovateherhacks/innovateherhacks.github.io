@@ -1,64 +1,18 @@
-/* Page container */
-.participant-guide-container {
+/* Match AboutUs background and font */
+.mentor-matching-container {
   background: #2f3f5e;
   color: #fcf5e3;
   padding: 110px 0 50px 0;
   font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* Page heading */
-.participant-guide-container h1 {
+.mentor-matching-container h1 {
   font-size: 3rem;
   margin-bottom: 24px;
   margin-top: 0;
-  color: #FCF5E3;
-  text-align: center;
+  color: #fcf5e3;
 }
 
-/* Row holding the two boxes */
-.mentor-box-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-/* Shared box styling */
-.mentor-box {
-  width: 320px;
-  padding: 32px 28px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #191c24;
-}
-
-/* Light pink — Participants */
-.participant-box {
-  background-color: #FCF5E3;
-}
-
-/* Dark pink — Mentors */
-.mentor-box-dark {
-  background-color: #FCF5E3;
-}
-
-/* Small headings inside boxes */
-.mentor-box h2 {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 1.75rem;
-}
-
-/* Body text */
-.mentor-box p {
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-/* Links */
-.mentor-box-link {
-  color: #B04467;
-  font-weight: bold;
-  text-decoration: underline;
+.mentor-matching-link {
+  color: #D59EB2;
 }
