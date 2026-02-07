@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import AboutUs from './AboutUs';
 import TracksPage from './TracksPage';
@@ -6,24 +6,28 @@ import ExecutiveBoard from './ExecutiveBoard';
 import Links from './Links';
 import FAQs from './FAQs';
 import Teams from './Teams';
+import TeamLanding from './TeamLanding';
 import Sponsors from './Sponsors';
 import Footer from './Footer';
 
 import TitleCard from './TitleCard.js';
 import Navbar from './Navbar.js';
-import Announcements from './Announcements.js';
-import AuthSection from './AuthSection';
-
-import ParticipantGuide from './ParticipantGuide.js';
-import MentorMatching from './MentorMatching.js';
 
 function App() {
-  const [accessToken, setAccessToken] = useState(null);
   return (
     <div className="App">
       <a
         id="mlh-trust-badge"
-        className="mlh-badge"
+        style={{
+          display: 'block',
+          maxWidth: '100px',
+          minWidth: '60px',
+          position: 'fixed',
+          right: '50px',
+          top: 0,
+          width: '10%',
+          zIndex: 10000
+        }}
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=gray"
         target="_blank"
         rel="noreferrer"
@@ -31,22 +35,11 @@ function App() {
         <img
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-gray.svg"
           alt="Major League Hacking 2026 Hackathon Season"
+          style={{ width: '100%' }}
         />
-      </a> 
+      </a>
       <Navbar/>
       <TitleCard/>
-      <section id="auth">
-        <AuthSection onAccessToken={setAccessToken} />
-      </section>
-      <section id="announcements">
-        <Announcements accessToken={accessToken} />
-      </section>
-      <section id="participantguide">
-        <ParticipantGuide/>
-      </section>
-      <section id="mentormatching">
-        <MentorMatching/>
-      </section>
       <section id="about">
         <AboutUs/>
       </section>
